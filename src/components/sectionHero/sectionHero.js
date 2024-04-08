@@ -1,6 +1,6 @@
 import React from "react";
 
-import heroIllustration from '../../images/illustration-1.svg'
+import illustration from '../../images/illustration-1.svg'
 
 const Hero = () => {
     return (
@@ -16,7 +16,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            <img src={heroIllustration} alt="hero illustation"></img>
+            <img src={illustration} alt="hero illustation"></img>
         </section>
     )
 }
