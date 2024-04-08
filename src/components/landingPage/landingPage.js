@@ -5,6 +5,8 @@ import SectionStayProductive from "../sectionStayProductive/sectionStayProductiv
 import EarlyAccess from "../earlyAccess/earlyAccess";
 import Footer from "../footer/footer";
 
+import './landingPage.css'
+
 const LandingPage = () =>{
     return(
         <main className="container">
