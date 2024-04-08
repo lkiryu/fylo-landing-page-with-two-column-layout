@@ -1,12 +1,14 @@
 import React from "react";
-import logo from '../../images/logo.svg'
+import logoWhite from '../../images/logo-white.svg'
+
+import './footer.css'
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
                 <a href="/">
-                    <img src={logo} alt="logo" className="logo"></img>
+                    <img src={logoWhite} alt="logo" className="logo"></img>
                 </a>
 
                 <div className="info">
