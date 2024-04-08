@@ -64,7 +64,7 @@
 }
 
 .hero .submitInput:hover{
-    opacity: 80%;
+    background-color: hsl(224, 93%, 65%);
 }
 
 .hero img{
