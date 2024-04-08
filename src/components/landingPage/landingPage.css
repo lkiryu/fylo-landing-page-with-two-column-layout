@@ -22,6 +22,8 @@ body{
 
 .title{
     font-family: "Raleway", sans-serif;
+    color: hsl(243, 87%, 12%);
+    font-size: 40px;
 }
 
 .container{
