@@ -1,4 +1,4 @@
-.hero{
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,51 +10,52 @@
     padding: 100px 100px 200px;
 }
 
-.hero-content{
+.hero-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70vw;
 }
 
-.hero .info{
+.hero .info,
+.hero img {
     width: 600px;
 }
 
-.hero .info .title{
+.hero .info .title {
     line-height: 55px;
     margin-bottom: 20px;
 }
 
-.hero .info .description{
+.hero .info .description {
     color: hsl(238, 22%, 44%);
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.hero .info .inputs{
+.hero .info .inputs {
     display: flex;
     gap: 20px;
 }
 
-.hero .inputs input{
+.hero .inputs input {
     padding: 15px 30px;
     border-radius: 5px;
 }
 
-.hero .emailInput{
+.hero .emailInput {
     border: 1px solid hsl(238, 22%, 44%);
 }
 
-.hero .emailInput::placeholder{
+.hero .emailInput::placeholder {
     color: hsl(0, 0%, 75%);
 }
 
-.hero .emailInput:focus{
+.hero .emailInput:focus {
     outline: none;
 }
 
-.hero .submitInput{
+.hero .submitInput {
     border: none;
     background-color: hsl(224, 93%, 58%);
     color: hsl(0, 0%, 100%);
@@ -63,10 +64,49 @@
     transition: 0.3s ease-in;
 }
 
-.hero .submitInput:hover{
+.hero .submitInput:hover {
     background-color: hsl(224, 93%, 65%);
 }
 
-.hero img{
-    width: 600px;
+@media(max-width:1500px) {
+    .hero-content {
+        width: 90vw;
+    }
+}
+
+@media(max-width:1200px) {
+    .hero-content {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .hero img {
+        margin-bottom: 40px;
+    }
+
+    .hero .info .title,
+    .hero .info .description {
+        text-align: center;
+    }
+
+    .hero .info .inputs {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px) {
+    .hero {
+        padding: 100px;
+    }
+
+    .hero .info,
+    .hero img {
+        width: 300px;
+    }
+
+    .hero .info .title {
+        font-size: 25px;
+        line-height: normal;
+    }
 }

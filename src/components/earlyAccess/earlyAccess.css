@@ -1,4 +1,4 @@
-.early-access{
+.early-access {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     background-color: hsl(238, 22%, 44%);
 }
 
-.early-access-content{
+.early-access-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,40 +14,40 @@
     padding: 100px 0;
 }
 
-.early-access-content .info{
+.early-access-content .info {
     width: 500px;
 }
 
-.early-access-content .info .title{
+.early-access-content .info .title {
     color: hsl(0, 0%, 100%);
     margin-bottom: 20px;
 }
 
-.early-access-content .info .description{
+.early-access-content .info .description {
     color: hsl(0, 0%, 100%);
 }
 
-.early-access-content .inputs input{
+.early-access-content .inputs input {
     display: flex;
     padding: 15px 30px;
     border-radius: 5px;
 }
 
-.early-access-content .emailInput{
+.early-access-content .emailInput {
     border: 1px solid hsl(238, 22%, 44%);
     width: 500px;
     margin-bottom: 20px;
 }
 
-.early-access-content .emailInput::placeholder{
+.early-access-content .emailInput::placeholder {
     color: hsl(0, 0%, 75%);
 }
 
-.early-access-content .emailInput:focus{
+.early-access-content .emailInput:focus {
     outline: none;
 }
 
-.early-access-content .submitInput{
+.early-access-content .submitInput {
     border: none;
     background-color: hsl(224, 93%, 58%);
     color: hsl(0, 0%, 100%);
@@ -56,6 +56,40 @@
     transition: 0.3s ease-in;
 }
 
-.early-access-content .submitInput:hover{
+.early-access-content .submitInput:hover {
     background-color: hsl(224, 93%, 65%);
+}
+
+@media(max-width:1500px) {
+    .early-access-content {
+        width: 90vw;
+    }
+}
+
+@media(max-width:1200px) {
+    .early-access-content {
+        flex-direction: column;
+    }
+
+    .early-access-content .info {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .early-access-content .inputs input {
+        width: 500px;
+    }
+
+    .early-access-content .submitInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:500px) {
+    .early-access-content .info,
+    .early-access-content .inputs input {
+        width: 300px;
+    }
 }

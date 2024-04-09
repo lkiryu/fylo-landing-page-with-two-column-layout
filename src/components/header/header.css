@@ -21,3 +21,19 @@
 .nav-link:hover{
     color: hsl(243, 87%, 12%);
 }
+
+@media(max-width:1500px){
+    .header{
+        width: 90vw;
+    }
+}
+
+@media(max-width:500px){
+    .header img{
+        width: 100px;
+    }
+
+    .nav-list{
+        gap: 10px;
+    }
+}
